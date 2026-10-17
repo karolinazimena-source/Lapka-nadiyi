@@ -1,0 +1,552 @@
+:root {
+    --main-color: #E89B5B;
+    --bg-color: #FFF8F0;
+    --text-color: #333333;
+    --secondary-text: #666666;
+    --white: #FFFFFF;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 120px;
+    position: relative;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: var(--main-color);
+}
+
+
+button,
+.button {
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    background: var(--main-color);
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+}
+
+button:hover,
+.button:hover {
+    opacity: 0.85;
+}
+
+
+.burger {
+    display: none;
+    background: none;
+    color: var(--text-color);
+    padding: 0;
+    font-size: 28px;
+}
+
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 120px;
+    gap: 70px;
+    background: var(--bg-color);
+    border-radius: 0 0 40px 40px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.hero-text h1 {
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 25px;
+    color: var(--text-color);
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 35px;
+    line-height: 1.6;
+    color: var(--secondary-text);
+}
+
+.hero-image {
+    width: 600px;
+    height: 400px;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+.benefits {
+    padding: 90px 120px;
+    text-align: center;
+}
+
+.benefits h2,
+.pets h2,
+.adoption h2,
+.faq h2,
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: var(--text-color);
+}
+
+
+.cards,
+.pet-cards,
+.steps {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.card,
+.pet-card,
+.step {
+    width: 300px;
+    padding: 30px;
+    border-radius: 20px;
+    background: var(--white);
+    border: 1px solid #f1e4d5;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    transition: 0.3s;
+}
+
+.card:hover,
+.pet-card:hover,
+.step:hover {
+    transform: translateY(-5px);
+}
+
+
+.icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.card h3,
+.pet-card h3,
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.card p,
+.pet-card p,
+.step p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+.pets {
+    padding: 90px 120px;
+    text-align: center;
+    background: var(--bg-color);
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 25px;
+    background: #f1e4d5;
+    color: #333;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: var(--main-color);
+    color: white;
+}
+
+.pet-card {
+    padding: 25px;
+}
+
+.pet-image {
+    width: 100%;
+    height: 220px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+
+
+
+.adoption {
+    padding: 90px 120px;
+    text-align: center;
+}
+
+
+
+.faq {
+    padding: 90px 120px;
+    background: var(--bg-color);
+}
+
+.faq-item {
+    padding: 22px 30px;
+    margin-bottom: 15px;
+    background: white;
+    border-radius: 20px;
+    border: 1px solid #f1e4d5;
+    cursor: pointer;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-answer {
+    display: none;
+    margin-top: 15px;
+    color: var(--secondary-text);
+    line-height: 1.5;
+}
+
+
+.contact {
+    padding: 90px 120px;
+    text-align: center;
+    background: #FFFFFF;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    padding: 35px;
+    background: var(--white);
+    border-radius: 25px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact input,
+.contact textarea {
+    padding: 15px 20px;
+    border: 1px solid #e8d8c8;
+    border-radius: 15px;
+    font-size: 16px;
+    font-family: inherit;
+    outline: none;
+}
+
+.contact textarea {
+    height: 150px;
+    resize: none;
+}
+
+form label {
+    display: none;
+}
+
+#form-message {
+    margin-top: 15px;
+    font-weight: 600;
+    color: #7A5C3E;
+}
+
+
+
+footer {
+    background: #3A3028;
+    color: white;
+    text-align: center;
+    padding: 50px 120px;
+}
+
+footer h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin-bottom: 10px;
+    color: #F5EDE3;
+}
+
+
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+
+    .burger {
+        display: block;
+    }
+
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 75px;
+        left: 0;
+        width: 100%;
+        background: white;
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+        z-index: 10;
+    }
+
+
+    nav.active {
+        display: flex;
+    }
+
+
+    header .button {
+        display: none;
+    }
+
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding: 50px 20px;
+        gap: 30px;
+        height: auto;
+    }
+
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+
+    .hero-image {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+
+    .benefits,
+    .pets,
+    .adoption,
+    .faq,
+    .contact {
+        padding: 50px 20px;
+    }
+
+
+    .benefits h2,
+    .pets h2,
+    .adoption h2,
+    .faq h2,
+    .contact h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+
+    .cards,
+    .pet-cards,
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .card,
+    .pet-card,
+    .step {
+        width: 100%;
+        max-width: 350px;
+    }
+
+
+    footer {
+        padding: 40px 20px;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+
+    header {
+        padding: 20px 40px;
+    }
+
+    .hero {
+        padding: 70px 40px;
+        gap: 30px;
+    }
+
+    .hero-image {
+        width: 450px;
+        height: 320px;
+        max-width: 100%;
+    }
+
+    .benefits,
+    .pets,
+    .adoption,
+    .faq,
+    .contact {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    header .button {
+        display: none;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        padding:120px 20px 50px 20px;
+        height: auto;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-image {
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .benefits,
+    .pets,
+    .adoption,
+    .faq,
+    .contact {
+        padding: 50px 20px;
+    }
+
+    .cards,
+    .pet-cards,
+    .steps {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card,
+    .pet-card,
+    .step {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    footer {
+        padding: 40px 20px;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+nav.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+    padding: 20px;
+    gap: 15px;
+}
+
+}

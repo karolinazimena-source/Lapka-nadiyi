@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лапка Надії</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <header>
+    <div class="logo">
+        🐾 Лапка Надії
+    </div>
+
+    <nav>
+    <a href="#pets">Тварини</a>
+    <a href="#about">Про нас</a>
+    <a href="#adoption">Усиновлення</a>
+    <a href="#contact">Контакти</a>
+</nav>
+
+<button class="burger">
+    ☰
+</button>
+    <a href="#contact" class="button">Допомогти</a>
+</header> 
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-text">
+        <h1>Кожна лапка заслуговує на любов</h1>
+        <p>
+            Допомагаємо тваринам знайти турботливих господарів
+            та новий дім.
+        </p>
+        <a href="#pets" class="button">Знайти друга</a>
+    </div>
+
+   <img src="images/hero.jpg" alt="Тварини притулку" class="hero-image">
+</section>
+<section class="benefits" id="about">
+
+    <h2>Чому обирають нас?</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="icon">🐾</div>
+            <h3>Турбота</h3>
+            <p>Допомагаємо тваринам отримати любов і безпеку.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐾</div>
+            <h3>Надійність</h3>
+            <p>Підтримуємо людей та тварин на кожному етапі.</p>
+        </div>
+
+        <div class="card">
+            <div class="icon">🐾</div>
+            <h3>Нова сім’я</h3>
+            <p>Знаходимо для тварин відповідальних господарів.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="pets" id="pets">
+    <h2>Наші тварини</h2>
+
+    <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">Усі</button>
+    <button class="filter-btn" data-filter="dog">Собаки</button>
+    <button class="filter-btn" data-filter="cat">Коти</button>
+</div>
+
+    <div class="pet-cards">
+
+       <div class="pet-card dog">
+            <img src="images/dog1.jpg" alt="Боня" class="pet-image">
+<h3>Боня</h3>
+<p>Собака, 2 роки</p>
+            <a href="#contact" class="button">Усиновити</a>
+        </div>
+
+        <div class="pet-card cat">
+         <img src="images/cat1.jpg" alt="Мурчик" class="pet-image"> 
+            <h3>Мурчик</h3>
+            <p>Кіт, 1 рік</p>
+            <a href="#contact" class="button">Усиновити</a>
+        </div>
+
+       <div class="pet-card dog">
+            <img src="images/dog2.jpg" alt="Рекс" class="pet-image">
+            <h3>Рекс</h3>
+            <p>Собака, 3 роки</p>
+            <a href="#contact" class="button">Усиновити</a>
+        </div>
+
+    </div>
+
+</section>
+<section class="adoption" id="adoption">
+
+    <h2>Як усиновити тварину?</h2>
+
+    <div class="steps">
+
+        <div class="step">
+            <h3>1. Оберіть тварину</h3>
+            <p>Ознайомтеся з інформацією та знайдіть нового друга.</p>
+        </div>
+
+        <div class="step">
+            <h3>2. Заповніть заявку</h3>
+            <p>Залиште свої контакти для зв'язку.</p>
+        </div>
+
+        <div class="step">
+            <h3>3. Заберіть додому</h3>
+            <p>Познайомтеся з твариною та подаруйте їй новий дім.</p>
+        </div>
+
+    </div>
+
+</section>
+<section class="faq" id="faq">
+
+    <h2>Поширені запитання</h2>
+
+   <div class="faq-item">
+    <div class="faq-question">
+        <p>Як усиновити тварину?</p>
+        <span>▼</span>
+    </div>
+
+    <div class="faq-answer">
+        Потрібно обрати тварину та заповнити заявку.
+    </div>
+</div>
+
+   <div class="faq-item">
+
+    <div class="faq-question">
+        <p>Чи можна допомогти без усиновлення?</p>
+        <span>▼</span>
+    </div>
+
+    <div class="faq-answer">
+        Так, можна допомогти притулку фінансово, кормом або необхідними речами для тварин.
+    </div>
+
+</div>
+
+    <div class="faq-item">
+
+    <div class="faq-question">
+        <p>Які документи потрібні?</p>
+        <span>▼</span>
+    </div>
+
+    <div class="faq-answer">
+        Потрібно заповнити заявку та надати необхідну інформацію про майбутні умови для тварини.
+    </div>
+
+</div>
+
+</section>
+<section class="contact" id="contact">
+    <h2>Зв'яжіться з нами</h2>
+
+ <form id="contact-form" novalidate>
+
+    <label for="name">Ваше ім'я</label>
+    <input type="text" id="name" placeholder="Ваше ім'я" required>
+
+    <label for="email">Ваш email</label>
+    <input type="email" id="email" placeholder="Ваш email" required>
+
+    <label for="message">Ваше повідомлення</label>
+    <textarea id="message" placeholder="Ваше повідомлення" required></textarea>
+
+    <button type="submit">Надіслати</button>
+
+    <p id="form-message"></p>
+
+</form>
+
+</section>
+
+</main>
+
+<footer>
+
+    <h3>🐾 Лапка Надії</h3>
+
+    <p>Даруємо тваринам шанс на нове життя.</p>
+
+    <p>Email: info@lapkanadii.ua</p>
+
+    <p>Телефон: +380 67 123 45 67</p>
+
+    <p>© 2026 Лапка Надії. Усі права захищені.</p>
+
+</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
